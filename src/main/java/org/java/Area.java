@@ -1,5 +1,7 @@
 package org.java;
 
+import static java.lang.Math.round;
+
 public class Area {
     public float areaRectangulo(float base, float altura){
         return base  * altura;
@@ -11,8 +13,8 @@ public class Area {
     public float areaTriangulo( float base, float altura){
         return ((base * altura)/2);
     }
-    public float areaPentagono(float lado, float apotema){
-        float perimetro = lado + 5;
-        return (perimetro * apotema)/2;
+    public double areaPentagono(double lado, double apotema){
+        double perimetro = lado * 5;
+        return Math.round((perimetro * apotema)/2);
     }
 }
